@@ -5,6 +5,30 @@ var path = require('path');
 var app = express();
 app.use(morgan('combined'));
 
+var article-one = {
+    title : 'Article One | Ankita',
+    heading : 'This is the content of article one',
+    content : `
+        <p>This is a line.This is a line.This is a line</p>
+        
+        <p>This is a line.This is a line.This is a line</p>
+        
+        <p>This is a line.This is a line.This is a line</p>
+`
+};
+
+var article-two = {
+     title : 'Article Two | Ankita',
+    heading : 'This is the content of article two',
+    content : `
+        <p>This is a line.This is a line.This is a line</p>
+        
+        <p>This is a line.This is a line.This is a line</p>
+        
+        <p>This is a line.This is a line.This is a line</p>
+`
+};
+
 app.get('/', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'index.html'));
 });
