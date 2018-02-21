@@ -42,7 +42,7 @@ var htmlTemplate = `
 <head>
     <title>
     ${title}
-</title>
+    </title>
 
 <meta name="viewport" content="width=device-width , initial-scale=1" /> 
 <link href="/ui/style.css" rel="stylesheet" />
@@ -76,7 +76,6 @@ app.get('/ui/style.css', function (req, res) {
 app.get('/ui/madi.png', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'madi.png'));
 });
-
 
 
 app.get('/:articleName', function (req, res) {
