@@ -78,6 +78,15 @@ app.get('/ui/main.js', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'main.js'));
 });
 
+var names=[];
+app.get('/submit-name', function (req, res) {
+  var name = request.query.name;
+  
+  names.push(name);
+  
+  res.send(JSON.stringify(names));
+});
+
 app.get('/article-one', function (req, res) {
   res.sendFile(path.join(__dirname, 'ui', 'article-one.html'));
 });
