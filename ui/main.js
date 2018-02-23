@@ -23,7 +23,7 @@ btn.onclick = function(){
     };
     
     //Make a request
-    reuqest.open('GET','http://ankitajamdade25.imad.hasura-app.io/counter',true);
+    request.open('GET','http://ankitajamdade25.imad.hasura-app.io/counter',true);
     request.send(null);
     
 };
